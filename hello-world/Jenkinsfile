@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage('Name') {
+            steps {
+                echo 'Hello! My name is Srushti. This is experiment 05 of DevOps Lab.'
+            }
+        }
         stage('Static Analysis') {
             steps {
                 echo 'Run the static analysis to the code' 
